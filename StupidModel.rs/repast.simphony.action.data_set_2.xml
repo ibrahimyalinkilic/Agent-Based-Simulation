@@ -1,0 +1,49 @@
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.7.0">
+  <name>Data Set of File Output</name>
+  <type>AGGREGATE</type>
+  <inclTick>true</inclTick>
+  <inclBatchRun>false</inclBatchRun>
+  <inclRandomSeed>false</inclRandomSeed>
+  <scheduleParams>
+    <start>1.0</start>
+    <interval>1.0</interval>
+    <priority>-Infinity</priority>
+    <pType>LAST</pType>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+    <hashCode>0</hashCode>
+  </scheduleParams>
+  <atEnd>false</atEnd>
+  <methodDataSources class="linked-hash-map">
+    <entry>
+      <string>Min Size</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Min Size</id>
+        <className>stupidmodel.agents.Attack</className>
+        <methodName>getMaxConsumptionRate</methodName>
+        <aggType>MIN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Max Size</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Max Size</id>
+        <className>stupidmodel.agents.Attack</className>
+        <methodName>getMaxConsumptionRate</methodName>
+        <aggType>MAX</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Mean Size</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Mean Size</id>
+        <className>stupidmodel.agents.Attack</className>
+        <methodName>getMaxConsumptionRate</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+  </methodDataSources>
+  <countSources class="linked-hash-map"/>
+  <customNADataSources class="linked-hash-map"/>
+  <customAggDataSources class="linked-hash-map"/>
+</repast.simphony.data2.engine.DataSetDescriptor>
